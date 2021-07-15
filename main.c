@@ -4,6 +4,7 @@
 int main()
 {
     /*https://www.youtube.com/watch?v=KJgsSFOSQv0&t*/
+    sayHi();
 
     return 0;
 }
