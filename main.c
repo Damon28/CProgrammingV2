@@ -3,18 +3,22 @@
 
 /*https://www.youtube.com/watch?v=KJgsSFOSQv0&t*/
 
-/*When calling a function that returns something, define the function before it is called
-This is called prototyping which allows you to define a function after it is called*/
-double cube(double num);
+int max(int num1, int num2, int num3){
+    int result;
+    if(num1 >= num2 && num1 >= num3){
+        result = num1;
+    } else if(num2 >= num1 && num2 >= num3){
+        result = num2;
+    } else {
+        result = num3;
+    }
+}
 
 int main()
 {
-    printf("===Return Statements===\n\n");
-    printf("Answer: %f\n\n", cube(3.0)); /*CALLED HERE*/
+    printf("===If/Else Statements===\n\n");
+
+    printf("%d\n\n", max(60, 70, 80));
 
     return 0;
-}
-
-double cube(double num) { /*DEFINED HERE*/
-    return num * num * num;
 }
