@@ -3,7 +3,26 @@
 
 int main()
 {
-    printf("===Simple Calculator w/ Integers===\n\n");
+    printf("===Mad Libs Game===\n\n");
+    char color[20];
+    char pluralNoun[20];
+    char celebrityFirst[20];
+    char celebrityLast[20];
+    printf("Enter a color: ");
+    scanf("%s", color);
+    printf("Enter a plural noun: ");
+    scanf("%s", pluralNoun);
+    printf("Enter a celebrity name: ");
+    scanf("%s%s", celebrityFirst, celebrityLast);
+    /*AGAIN: Note that the ampersand is not used for strings*/
+
+    printf("\n\nRoses are %s\n", color);
+    printf("%s are blue\n", pluralNoun);
+    printf("I love %s %s\n", celebrityFirst, celebrityLast);
+
+
+
+    printf("\n===Simple Calculator w/ Integers===\n\n");
     int num1;
     int num2;
     printf("Enter first number: ");
