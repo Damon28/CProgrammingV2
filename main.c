@@ -3,6 +3,8 @@
 
 int main()
 {
+    /*:::THIS IS A TEST:::*/
+
     printf("===Mad Libs Game===\n\n");
     char color[20];
     char pluralNoun[20];
@@ -13,12 +15,12 @@ int main()
     printf("Enter a plural noun: ");
     scanf("%s", pluralNoun);
     printf("Enter a celebrity name: ");
-    scanf("%s%s", celebrityFirst, celebrityLast);
+    scanf("%s%s", celebrityFirst, celebrityLast); /*first & last*/
     /*AGAIN: Note that the ampersand is not used for strings*/
 
     printf("\n\nRoses are %s\n", color);
     printf("%s are blue\n", pluralNoun);
-    printf("I love %s %s\n", celebrityFirst, celebrityLast);
+    printf("I love %s %s\n", celebrityFirst, celebrityLast); /*first & last*/
 
 
 
