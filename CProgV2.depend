@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1626431667 source:c:\users\user\documents\git\cprogv2\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1626375370 source:c:\users\user\documents\git\cprogv2\mad libs game.c
+	<stdio.h>
+	<stdlib.h>
+
