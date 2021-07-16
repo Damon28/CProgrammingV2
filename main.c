@@ -3,9 +3,23 @@
 
 int main()
 {
-    /*:::THIS IS A TEST:::*/
+    /*https://www.youtube.com/watch?v=KJgsSFOSQv0&t*/
+    printf("\n\n===Arrays===\n\n");
 
-    printf("===Mad Libs Game===\n\n");
+    int luckyNumbers[] = {4, 8, 15, 16, 23}; /*this is an array*/
+    printf("%d\n", luckyNumbers[0]); /*0-index like python | prints '4'*/
+    printf("%d\n", luckyNumbers[1]); /* prints '8'*/
+
+    /*reassigning values at specific indices*/
+    luckyNumbers[1] = 200;
+    printf("%d\n\n", luckyNumbers[1]); /* prints '200'*/
+
+    int unknownArray[10];
+    unknownArray[1] = 80;
+    unknownArray[0] = 90;
+    printf("%d", unknownArray[0]);
+
+    printf("\n\n===Mad Libs Game===\n\n");
     char color[20];
     char pluralNoun[20];
     char celebrityFirst[20];
