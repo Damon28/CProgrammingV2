@@ -5,28 +5,31 @@
 
 int main()
 {
-    printf("===Guessing Game===\n\n");
+    printf("===For Loops===\n\n");
 
-    int secretNumber = 5;
-    int guess;
-    int guessCount = 0;
-    int guessLimit = 3;
-    int outOfGuesses = 0;
+    printf("===While Loop===\n\n");
 
-    while(guess != secretNumber && outOfGuesses == 0){
-        if(guessCount < guessLimit){
-            printf("Enter a number: ");
-            scanf("%d", &guess);
-            guessCount++;
-        } else {
-            outOfGuesses == 1;
-        }
+    int i = 1;
+    while(i <= 5){
+        printf("%d\n", i);
+        i++;
     }
-    if(outOfGuesses == 1){
-        printf("out of guesses");
-    }else {
-        printf("You Win!");
+
+    printf("===For Loop==\n\n");
+    int d;
+    for(d = 1; d <= 5; d++){ /*NOTE: the semi-colons between the things*/
+        printf("%d\n", d);
     }
+
+    printf("\n===Iterating with 'For Loops'===\n\n");
+    int luckyNumbers[] = {4, 8, 15, 16, 23, 41};
+
+    int x;
+    for(x = 0; x < 6; x++){
+        printf("%d\n", luckyNumbers[x]);
+    }
+
+
 
     return 0;
 }
