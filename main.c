@@ -5,22 +5,28 @@
 
 int main()
 {
-    printf("===While Loops===\n\n");
+    printf("===Guessing Game===\n\n");
 
-    int index = 1;
-    while(index <= 5){
-        printf("%d\n", index);
-        index = index + 1;
+    int secretNumber = 5;
+    int guess;
+    int guessCount = 0;
+    int guessLimit = 3;
+    int outOfGuesses = 0;
+
+    while(guess != secretNumber && outOfGuesses == 0){
+        if(guessCount < guessLimit){
+            printf("Enter a number: ");
+            scanf("%d", &guess);
+            guessCount++;
+        } else {
+            outOfGuesses == 1;
+        }
     }
-
-
-    printf("\nBelow is a 'do while loop':\n");
-    int idx = 1;
-    do {
-        printf("%d\n", idx);
-        idx++; /*this is equivalent to 'index = index + 1;'*/
-    } while(idx <= 5);
-
+    if(outOfGuesses == 1){
+        printf("out of guesses");
+    }else {
+        printf("You Win!");
+    }
 
     return 0;
 }
