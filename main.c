@@ -3,33 +3,32 @@
 
 /*https://www.youtube.com/watch?v=KJgsSFOSQv0&t*/
 
-/*
-and = &&
-or = ||
-*/
-
-int max(int num1, int num2, int num3){
-    int result;
-    if(num1 >= num2 && num1 >= num3){ /*NOTE the ampersand symbols*/
-        result = num1;
-    } else if(num2 >= num1 && num2 >= num3){ /*note 'else if' statement*/
-        result = num2;
-    } else { /*Note 'else' statement*/
-        result = num3;
-    }
-}
-
 int main()
 {
-    printf("===If/Else Statements===\n\n");
+    printf("===Switch Statements===\n\n");
+    printf("It's an 'if statement' that allows you to compare one value to many others.");
 
-    printf("%d\n\n", max(60, 70, 80));
-
-    if(3 < 2 || 2 > 5){ /*Note the 'or' sign (||).*/
-        printf("True");
-    } else {
-        printf("False")
+    char grade = 'A';
+    
+    switch(grade){
+    case 'A':
+        printf("You did great!");
+        break;
+    case 'B':
+        printf("You did alright!");
+        break;
+    case 'C':
+        printf("You did poorly");
+        break;
+    case 'D':
+        printf("You did very bad!");
+        break;
+    case 'F':
+        printf("You Failed!");
+        break;
+    default :
+        printf("Invalid Grade");
     }
-
+    
     return 0;
 }
