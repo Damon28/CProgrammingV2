@@ -5,24 +5,14 @@
 
 int main()
 {
-    printf("===2D Arrays & Nested Loops===\n\n");
+    printf("===Memory Addressing===\n\n");
 
-    int nums[3][2] = {                                /*2 open/close bracket ([][])== 2D array*/
-                    {1, 2},         /*First element in the 'nums' array*/
-                    {3, 4},
-                    {5, 6}
-                    } ;
+    int age = 30; /*30 is stored in RAM at a specific physical location in memory*/
+    double gpa = 3.4; /*3.4 is stored in RAM at a specific physical location in memory*/
+    char grade = 'A'; /*'A' is stored in RAM at a specific physical location in memory*/
 
-    printf("%d, ", nums[0][0]); /*1*/
-    printf("%d\n\n", nums[1][1]); /*4*/
-
-    int i, j; /*declaring 2 variables*/
-    for(i = 0; i < 3; i++){
-        for(j=0; j < 2; j++){
-            printf("%d,", nums[i][j]);
-        }
-        printf("\n");
-    }
+    printf("%p\n\n", &age); /*%p stands for "pointer". This'll print out the memory address of the value 30.*/
+    printf("age: %p\ngpa: %p\ngrade: %p\n", &age, &gpa, &grade);
 
     return 0;
 }
