@@ -5,31 +5,24 @@
 
 int main()
 {
-    printf("===For Loops===\n\n");
+    printf("===2D Arrays & Nested Loops===\n\n");
 
-    printf("===While Loop===\n\n");
+    int nums[3][2] = {                                /*2 open/close bracket ([][])== 2D array*/
+                    {1, 2},         /*First element in the 'nums' array*/
+                    {3, 4},
+                    {5, 6}
+                    } ;
 
-    int i = 1;
-    while(i <= 5){
-        printf("%d\n", i);
-        i++;
+    printf("%d, ", nums[0][0]); /*1*/
+    printf("%d\n\n", nums[1][1]); /*4*/
+
+    int i, j; /*declaring 2 variables*/
+    for(i = 0; i < 3; i++){
+        for(j=0; j < 2; j++){
+            printf("%d,", nums[i][j]);
+        }
+        printf("\n");
     }
-
-    printf("===For Loop==\n\n");
-    int d;
-    for(d = 1; d <= 5; d++){ /*NOTE: the semi-colons between the things*/
-        printf("%d\n", d);
-    }
-
-    printf("\n===Iterating with 'For Loops'===\n\n");
-    int luckyNumbers[] = {4, 8, 15, 16, 23, 41};
-
-    int x;
-    for(x = 0; x < 6; x++){
-        printf("%d\n", luckyNumbers[x]);
-    }
-
-
 
     return 0;
 }
