@@ -10,8 +10,16 @@ int main()
     int index = 1;
     while(index <= 5){
         printf("%d\n", index);
-        index++; /*this is equivalent to 'index = index + 1;'*/
+        index = index + 1;
     }
+
+
+    printf("\nBelow is a 'do while loop':\n");
+    int idx = 1;
+    do {
+        printf("%d\n", idx);
+        idx++; /*this is equivalent to 'index = index + 1;'*/
+    } while(idx <= 5);
 
 
     return 0;
