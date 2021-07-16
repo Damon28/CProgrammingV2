@@ -5,20 +5,22 @@
 
 int main()
 {
-    printf("===Pointers===\n\n");
+    printf("===Dereferencing Pointers===\n\n");
 
     int age = 30;
-    int * pAge = &age; /*This is a "int pointer variable"*/
+    int *pAge = &age;
 
-    double gpa = 3.4;
-    double * pGpa = &gpa; /*This is a "double pointer variable"*/
+    printf("%p", pAge); /*this is a pointer location for 30*/
+    printf("\n\nWhen dereferencing, you are actually going to that memory location & grabbing the value\n");
 
-    char grade = 'A';
-    char * aGrade = &grade; /*This is a "char pointer variable"*/
+    printf("%d", *pAge); /*This will grab/print '30'*/
 
-    printf("age's memory address: %p\n", &age);
+    printf("\n\nDereferencing using asterisk (*) and ampersand (&).\n\n");
 
-    /*pointer is the memory address*/
+    printf("%d\n", &age); /*30*/
+    printf("%d\n", *&age); /**the star is dereferencing*/
+    printf("%d\n", &*&age); /*30*/
+    printf("%d\n", *&*&age); /*Memory Address*/
 
     return 0;
 }
