@@ -5,14 +5,20 @@
 
 int main()
 {
-    printf("===Memory Addressing===\n\n");
+    printf("===Pointers===\n\n");
 
-    int age = 30; /*30 is stored in RAM at a specific physical location in memory*/
-    double gpa = 3.4; /*3.4 is stored in RAM at a specific physical location in memory*/
-    char grade = 'A'; /*'A' is stored in RAM at a specific physical location in memory*/
+    int age = 30;
+    int * pAge = &age; /*This is a "int pointer variable"*/
 
-    printf("%p\n\n", &age); /*%p stands for "pointer". This'll print out the memory address of the value 30.*/
-    printf("age: %p\ngpa: %p\ngrade: %p\n", &age, &gpa, &grade);
+    double gpa = 3.4;
+    double * pGpa = &gpa; /*This is a "double pointer variable"*/
+
+    char grade = 'A';
+    char * aGrade = &grade; /*This is a "char pointer variable"*/
+
+    printf("age's memory address: %p\n", &age);
+
+    /*pointer is the memory address*/
 
     return 0;
 }
